@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Agencia especializada em Marketing digital e apicativos mobile"
+    />
+    <meta name="Keywords" content="Agência, Marketing,Sites" />
+    <meta name="Robots" content="index,follow" />
+    <meta name="author" content="Guilherme Moreira dos Santos" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+    <title>Nodeprop - Especializada em soluções digitais</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="index.html">
+        <h1 class="logo">Nodeprop - Especializada em soluções digitais</h1>
+      </a>
+      <button class="btn-menu" id="BtnAbrir"><i class="bi bi-list"></i></button>
+
+      <nav class="menu" id="menu">
+        <a class="btn-close" id="BtnFechar"><i class="bi bi-x-circle"></i></a>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Clientes</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="banner">
+      <div class="title">
+        <h2>Ouse inovar</h2>
+        <h3>
+          Criamos experiências e estabelecemos ações estratégicas que conectam
+          marcas e consumidores
+        </h3>
+      </div>
+      <div class="buttons">
+        <button class="Btn-cadastrar">
+          Cadastrar<i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+        <button class="Btn-sobre">
+          Sobre<i class="bi bi-question-circle-fill"></i>
+        </button>
+      </div>
+    </div>
+
+    <main class="servicos">
+      <article class="servico">
+        <a href="#"
+          ><img src="./img/criacoes.jpg" alt="campanhas publicitarias"
+        /></a>
+        <div class="inner">
+          <a href="#">Campanhas Publicitárias</a>
+          <h4>Impressos , VTs, Jingles</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            labore asperiores quo deleniti? Voluptatem doloremque ipsum ullam ad
+            modi, quisquam exercitationem consectetur iure dolores, voluptates
+            aut, necessitatibus magni eos veritatis?
+          </p>
+        </div>
+      </article>
+      <article class="servico">
+        <a href="#"><img src="./img/md.jpg" alt="Marketing digital" /></a>
+        <div class="inner">
+          <a href="#">Marketing digital </a>
+          <h4>Administração da redes sociais</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            labore asperiores quo deleniti? Voluptatem doloremque ipsum ullam ad
+            modi, quisquam exercitationem consectetur iure dolores, voluptates
+            aut, necessitatibus magni eos veritatis?
+          </p>
+        </div>
+      </article>
+
+      <article class="servico">
+        <a href="#"><img src="./img/cs.jpg" alt="Criação de Sites" /></a>
+        <div class="inner">
+          <a href="#">Criação de sites </a>
+          <h4>Sites administráveis</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            labore asperiores quo deleniti? Voluptatem doloremque ipsum ullam ad
+            modi, quisquam exercitationem consectetur iure dolores, voluptates
+            aut, necessitatibus magni eos veritatis?
+          </p>
+        </div>
+      </article>
+    </main>
+    <section class="newsletter">
+      <h2>Inscreva-se agora</h2>
+      <h3>Receba novidades, dicas e muto mais</h3>
+      <form>
+        <input
+          type="email"
+          name="E-mail"
+          placeholder="Cadastre o seu email"
+          id=""
+        />
+        <button>Cadastrar</button>
+      </form>
+    </section>
+
+    <footer class="rodape">
+      <div class="social-icons">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-google"></i></a>
+        <a href="#"><i class="bi bi-envelope"></i></a>
+      </div>
+      <p class="copyright">
+        <small>
+          Site feitpo por <strong>Guilherme Moreira dos Santos</strong> todos os
+          direitos reservados</small
+        >
+      </p>
+    </footer>
+    <script>
+      // DECLARAÇÃO DE VARIAVEIS
+      var AbrirBtn = document.getElementById("BtnAbrir"); // Abrir menu
+      var FecharBtn = document.getElementById("BtnFechar"); // Fechar menu
+
+      var AbrirMenu = () => {
+        var Menu = document.getElementById("menu");
+
+        Menu.style.display = "Block";
+      };
+
+      var FecharMenu = () => {
+        var Menu = document.getElementById("menu");
+
+        Menu.style.display = "None";
+      };
+
+      AbrirBtn.addEventListener("click", AbrirMenu);
+      FecharBtn.addEventListener("click", FecharMenu);
+    </script>
+  </body>
+</html>
